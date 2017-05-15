@@ -547,5 +547,13 @@ extension UIColor {
     class var scBrownishOrange: UIColor {
         return UIColor(red: 208.0 / 255.0, green: 157.0 / 255.0, blue: 38.0 / 255.0, alpha: 1.0)
     }
+    
+    class var scWhite: UIColor {
+        return UIColor(white: 238.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scWhiteTwo: UIColor {
+        return UIColor(white: 216.0 / 255.0, alpha: 1.0)
+    }
 }
 
