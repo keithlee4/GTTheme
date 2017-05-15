@@ -18,6 +18,9 @@ enum GTThemeType {
     case wddDarkBlue
     case wddCherry
     
+    //SC
+    case sc
+    
     var imageSuffixDesc: String {
         switch self {
         case .umBrightOrange:
@@ -28,6 +31,8 @@ enum GTThemeType {
             return ""
         case .wddCherry:
             return ""
+        case .sc:
+            return ""
         }
     }
 }
@@ -37,7 +42,6 @@ struct GTTheme{
     //MARK: - Layout / Images -
     //MARK: Main
     static var backbarButtonImage: UIImage = #imageLiteral(resourceName: "mainBackBarButton")
-    static var mainBackgroundImage: UIImage = #imageLiteral(resourceName: "bg")
     
     //MARK: - Colors -
     //Generic
@@ -124,9 +128,14 @@ struct GTTheme{
             wddThemeDarkBlue()
         case .wddCherry:
             wddThemeCherry()
+        case .sc:
+            scTheme()
         }
     }
     
+    static func scTheme() {
+        navTintColor = UIColor.scDarkBlueGrey
+    }
     
     static func wddThemeCherry() {
         //系統介面顏色
@@ -508,3 +517,35 @@ extension UIColor {
         return UIColor(red: 164.0 / 255.0, green: 36.0 / 255.0, blue: 59.0 / 255.0, alpha: 1.0)
     }
 }
+
+//MARK: SC 
+extension UIColor {
+    class var scBronze: UIColor {
+        return UIColor(red: 166.0 / 255.0, green: 121.0 / 255.0, blue: 0.0, alpha: 1.0)
+    }
+    
+    class var scBlack: UIColor {
+        return UIColor(white: 51.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scWarmGrey: UIColor {
+        return UIColor(white: 128.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scDarkBlueGrey: UIColor {
+        return UIColor(red: 20.0 / 255.0, green: 33.0 / 255.0, blue: 61.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scScarlet: UIColor {
+        return UIColor(red: 208.0 / 255.0, green: 2.0 / 255.0, blue: 27.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scSandy: UIColor {
+        return UIColor(red: 244.0 / 255.0, green: 224.0 / 255.0, blue: 136.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scBrownishOrange: UIColor {
+        return UIColor(red: 208.0 / 255.0, green: 157.0 / 255.0, blue: 38.0 / 255.0, alpha: 1.0)
+    }
+}
+
