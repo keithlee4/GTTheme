@@ -555,5 +555,21 @@ extension UIColor {
     class var scWhiteTwo: UIColor {
         return UIColor(white: 216.0 / 255.0, alpha: 1.0)
     }
+    
+    class var scAzure: UIColor {
+        return UIColor(red: 4.0 / 255.0, green: 150.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scTwilightBlue: UIColor {
+        return UIColor(red: 8.0 / 255.0, green: 72.0 / 255.0, blue: 135.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scOceanBlue: UIColor {
+        return UIColor(red: 5.0 / 255.0, green: 102.0 / 255.0, blue: 182.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var scWhiteThree: UIColor {
+        return UIColor(white: 245.0 / 255.0, alpha: 1.0)
+    }
 }
 
