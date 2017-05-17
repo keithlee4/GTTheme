@@ -532,6 +532,10 @@ extension UIColor {
         return UIColor(white: 128.0 / 255.0, alpha: 1.0)
     }
     
+    class var scWarmGreyTwo: UIColor {
+        return UIColor(white: 153.0 / 255.0, alpha: 1.0)
+    }
+    
     class var scDarkBlueGrey: UIColor {
         return UIColor(red: 20.0 / 255.0, green: 33.0 / 255.0, blue: 61.0 / 255.0, alpha: 1.0)
     }
