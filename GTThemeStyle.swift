@@ -135,6 +135,7 @@ struct GTTheme{
     
     static func scTheme() {
         navTintColor = UIColor.scDarkBlueGrey
+        tableViewHeaderBgColor = UIColor.scTwilightBlue
     }
     
     static func wddThemeCherry() {
